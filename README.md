@@ -29,7 +29,7 @@
 | 上传分享自己的语音及文字 | 语音识别API | 重要 |
 | 对上传照片中的地标进行识别分类| 地标识别API | 重要 |
 
-API加值
+### API调用示例
 ```
 Python代码示例
 
@@ -44,7 +44,7 @@ import base64
 
 request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/body_num"
 # 二进制方式打开图片文件
-f = open('human.jpg', 'rb')  #上传人流量图像
+f = open('human.jpg', 'rb')  #上传毕业照
 img = base64.b64encode(f.read())
 
 params = {"image":img}
